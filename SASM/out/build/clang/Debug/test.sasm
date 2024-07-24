@@ -1,0 +1,10 @@
+ADD 1
+COPY 0 1
+ADD 0  // Cycle start
+STORE 0
+COPY 0 2
+ADD 0
+STORE 0
+COPY 0 1
+COPY 7 0
+JUMP 2

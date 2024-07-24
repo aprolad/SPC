@@ -1,0 +1,3 @@
+C:/Users/aprol/OneDrive/Рабочий стол/SPC/SASM/out/build/clang/CMakeFiles/SASM.dir
+C:/Users/aprol/OneDrive/Рабочий стол/SPC/SASM/out/build/clang/CMakeFiles/ALL_BUILD.dir
+C:/Users/aprol/OneDrive/Рабочий стол/SPC/SASM/out/build/clang/CMakeFiles/ZERO_CHECK.dir
