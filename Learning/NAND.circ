@@ -182,6 +182,10 @@
       <a name="type" val="n"/>
     </comp>
     <comp lib="0" loc="(390,710)" name="Ground"/>
+    <comp lib="0" loc="(470,590)" name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
+    </comp>
     <comp lib="0" loc="(470,610)" name="Pull Resistor">
       <a name="facing" val="north"/>
     </comp>
@@ -203,6 +207,10 @@
     <comp lib="0" loc="(610,260)" name="Constant"/>
     <comp lib="0" loc="(610,330)" name="Constant">
       <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(660,590)" name="Probe">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="south"/>
     </comp>
     <comp lib="0" loc="(660,610)" name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -256,7 +264,7 @@
     <comp lib="1" loc="(540,1080)" name="AND Gate"/>
     <comp lib="1" loc="(540,1180)" name="AND Gate"/>
     <comp lib="1" loc="(650,1130)" name="OR Gate"/>
-    <comp lib="1" loc="(680,490)" name="NOT Gate"/>
+    <comp lib="1" loc="(870,470)" name="NOT Gate"/>
     <comp lib="8" loc="(100,620)" name="Text">
       <a name="font" val="SansSerif plain 12"/>
       <a name="text" val="Затвор"/>
@@ -421,7 +429,7 @@
     <comp loc="(1320,160)" name="Decoder1b"/>
     <comp loc="(1320,80)" name="Decoder1b"/>
     <comp loc="(1560,720)" name="HalfAdder"/>
-    <comp loc="(390,430)" name="Decoder1b"/>
+    <comp loc="(340,380)" name="Decoder1b"/>
     <comp loc="(450,2350)" name="FullAdder"/>
     <comp loc="(600,1440)" name="Mux2to1"/>
     <comp loc="(710,2310)" name="FullAdder"/>
@@ -486,6 +494,7 @@
     <wire from="(320,170)" to="(320,330)"/>
     <wire from="(320,170)" to="(370,170)"/>
     <wire from="(320,330)" to="(370,330)"/>
+    <wire from="(340,380)" to="(350,380)"/>
     <wire from="(340,610)" to="(350,610)"/>
     <wire from="(350,550)" to="(350,610)"/>
     <wire from="(350,550)" to="(370,550)"/>
@@ -506,8 +515,6 @@
     <wire from="(390,210)" to="(480,210)"/>
     <wire from="(390,280)" to="(390,310)"/>
     <wire from="(390,350)" to="(390,360)"/>
-    <wire from="(390,430)" to="(420,430)"/>
-    <wire from="(390,450)" to="(420,450)"/>
     <wire from="(390,510)" to="(390,530)"/>
     <wire from="(390,570)" to="(390,610)"/>
     <wire from="(390,610)" to="(390,650)"/>
@@ -529,6 +536,7 @@
     <wire from="(460,2140)" to="(2330,2140)"/>
     <wire from="(460,2140)" to="(460,2310)"/>
     <wire from="(460,2310)" to="(490,2310)"/>
+    <wire from="(470,590)" to="(470,610)"/>
     <wire from="(480,210)" to="(510,210)"/>
     <wire from="(530,610)" to="(540,610)"/>
     <wire from="(540,1080)" to="(600,1080)"/>
@@ -551,6 +559,7 @@
     <wire from="(640,170)" to="(650,170)"/>
     <wire from="(640,260)" to="(740,260)"/>
     <wire from="(650,1130)" to="(670,1130)"/>
+    <wire from="(660,590)" to="(660,610)"/>
     <wire from="(670,190)" to="(670,210)"/>
     <wire from="(670,210)" to="(760,210)"/>
     <wire from="(670,80)" to="(670,150)"/>
@@ -815,19 +824,19 @@
     <comp lib="1" loc="(390,320)" name="Controlled Buffer">
       <a name="control" val="left"/>
     </comp>
-    <comp lib="8" loc="(306,197)" name="Text">
+    <comp lib="8" loc="(305,195)" name="Text">
       <a name="text" val="Decoder1B"/>
     </comp>
-    <comp lib="8" loc="(307,416)" name="Text">
+    <comp lib="8" loc="(305,415)" name="Text">
       <a name="text" val="in"/>
     </comp>
-    <comp lib="8" loc="(331,452)" name="Text">
-      <a name="text" val="Enable"/>
-    </comp>
-    <comp lib="8" loc="(332,374)" name="Text">
+    <comp lib="8" loc="(330,370)" name="Text">
       <a name="text" val="Controlled buffer(Switch)"/>
     </comp>
-    <comp lib="8" loc="(370,414)" name="Text">
+    <comp lib="8" loc="(330,450)" name="Text">
+      <a name="text" val="Enable"/>
+    </comp>
+    <comp lib="8" loc="(370,410)" name="Text">
       <a name="text" val="out"/>
     </comp>
     <wire from="(240,270)" to="(260,270)"/>
@@ -944,22 +953,22 @@
     <comp lib="3" loc="(430,450)" name="Adder"/>
     <comp lib="3" loc="(590,350)" name="Adder"/>
     <comp lib="3" loc="(690,340)" name="Adder"/>
-    <comp lib="8" loc="(304,316)" name="Text">
+    <comp lib="8" loc="(300,315)" name="Text">
       <a name="text" val="Arg1"/>
     </comp>
-    <comp lib="8" loc="(305,338)" name="Text">
+    <comp lib="8" loc="(305,335)" name="Text">
       <a name="text" val="Arg2"/>
     </comp>
-    <comp lib="8" loc="(358,274)" name="Text">
+    <comp lib="8" loc="(355,270)" name="Text">
       <a name="text" val="Сумматор"/>
     </comp>
-    <comp lib="8" loc="(369,408)" name="Text">
+    <comp lib="8" loc="(365,405)" name="Text">
       <a name="text" val="Negator"/>
     </comp>
-    <comp lib="8" loc="(414,325)" name="Text">
+    <comp lib="8" loc="(410,325)" name="Text">
       <a name="text" val="Result"/>
     </comp>
-    <comp lib="8" loc="(528,278)" name="Text">
+    <comp lib="8" loc="(525,275)" name="Text">
       <a name="text" val="Вычисление разности"/>
     </comp>
     <wire from="(340,440)" to="(350,440)"/>
